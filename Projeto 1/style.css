@@ -40,7 +40,7 @@ footer {
     text-align: center;
     margin: 5em auto 4em auto;
     border-radius: 15px;
-    box-shadow: 0px 32px 33px -10px rgba(199,211,247,1);
+    box-shadow: 0px 10px 40px -15px var(--color4)
 }
 
 #summary {
@@ -117,7 +117,7 @@ footer {
 
 .pay {
     background-color: var(--color2);
-    box-shadow: 0px 32px 33px -10px rgba(199,211,247,1);
+    box-shadow: 0px 15px 25px -10px var(--color4);
     color: white;
     font-weight: 700;
     margin: 0 3.1em 1.7em 3.1em;
