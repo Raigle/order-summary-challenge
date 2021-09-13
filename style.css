@@ -18,6 +18,7 @@
 
 body {
     height: 100vh;
+    font-size: 1em;
     font-family: 'Red Hat Display', sans-serif;
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
@@ -25,12 +26,18 @@ body {
     background-color: var(--color1);
 }
 
+@media (max-width: 800px) {
+    body {
+    background-image: url(images/pattern-background-mobile.svg);
+    }
+}
+
 footer {
     position: absolute;
     width: 100%;
     padding-bottom: 1em;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     bottom: 0;
 }
 
@@ -46,7 +53,15 @@ footer {
     width: 380px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 5px 10px 40px -15px var(--color4)
+    box-shadow: 5px 10px 40px -15px var(--color4);
+}
+
+@media (max-width: 800px) {
+    #card {
+        font-size: .9em;
+        margin: 0 10px;
+        width: 300px;
+    }
 }
 
 #summary {
@@ -60,7 +75,7 @@ footer {
 }
 
 #summary p {
-    font-size: 14px;
+    font-size: .9em;
     line-height: 1.6em;
     padding: 1em 3em 0 3em;
     color: var(--color4);
@@ -70,20 +85,20 @@ footer {
     display: flex;
     background-color: var(--color3);
     margin: 0 2.5em;
-    padding: 1.3em 0;
+    padding: 1em 0;
     border-radius: 10px;
 }
 
 #plan h2 {
     color: var(--color5);
-    font-size: 14px;
+    font-size: .9em;
     font-weight: 900;
     padding-bottom: 5px;
 }
 
 #plan p {
     color: var(--color4);
-    font-size: 14px;
+    font-size: .9em;
 }
 
 #payment {
@@ -108,11 +123,17 @@ footer {
 .btn-change {
     background-color: var(--color3);
     font-weight: 700;
-    font-size: 14px;
+    font-size: .9em;
     color: var(--color2);
     margin-left: 5em;
     border: none;
     text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .btn-change {
+        margin-left: 1.5em;
+    }
 }
 
 .btn-change:hover {
@@ -140,7 +161,7 @@ footer {
 .cancel {
     color: var(--color4);
     padding-bottom: 30px;
-    font-size: 14px;
+    font-size: .9em;
     text-decoration: none;
     font-weight: 700;
 }
@@ -150,7 +171,7 @@ footer {
 }
 
 .attribution {
-    font-size: 12px;
+    font-size: .8em;
     text-align: center;
 }
 
@@ -158,4 +179,3 @@ footer {
     color: hsl(228, 45%, 44%);
     text-decoration: none;
 }
-
