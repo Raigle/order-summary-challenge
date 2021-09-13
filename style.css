@@ -26,7 +26,7 @@ body {
     background-color: var(--color1);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
     body {
     background-image: url(images/pattern-background-mobile.svg);
     }
@@ -56,10 +56,10 @@ footer {
     box-shadow: 5px 10px 40px -15px var(--color4);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
     #card {
         font-size: .9em;
-        width: 300px;
+        width: 315px;
     }
 }
 
@@ -74,7 +74,7 @@ footer {
 }
 
 #summary p {
-    font-size: .9em;
+    font-size: 1em;
     line-height: 1.6em;
     padding: 1em 3em 0 3em;
     color: var(--color4);
@@ -116,7 +116,7 @@ footer {
 
 .plan-img {
     width: 13%;
-    padding: 0 15px 0 20px;
+    padding: 0 1.1em;
 }
 
 .btn-change {
@@ -129,9 +129,9 @@ footer {
     text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
     .btn-change {
-        margin-left: 1.5em;
+        margin-left: 3em;
     }
 }
 
