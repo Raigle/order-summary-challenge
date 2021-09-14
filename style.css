@@ -35,7 +35,6 @@ body {
 footer {
     position: absolute;
     width: 100%;
-    margin: 1em 0;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
@@ -59,7 +58,7 @@ footer {
 @media (max-width: 400px) {
     #card {
         font-size: .9em;
-        width: 300px;
+        width: 302px;
     }
 }
 
@@ -133,7 +132,7 @@ footer {
 
 @media (max-width: 400px) {
     .btn-change {
-        margin-left: 3em;
+        margin-left: 5em;
     }
 }
 
