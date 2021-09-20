@@ -11,10 +11,10 @@
 
 </head>
 <body>
-    <div id="card">
-        <section id="card-img">
+    <main id="card">
+        <header id="card-img">
             <img class="card-img" src="images/illustration-hero.svg" alt="girl listening to music">
-        </section>
+        </header>
         <section id="summary">
             <h1>Order Summary</h1>
 
@@ -27,16 +27,22 @@
             <img class="plan-img" src="images/icon-music.svg" alt="">
             <div class="price">
                 <h2>Annual Plan</h2>
-                <p>$59.99/year</p>
+                <span>$59.99/year</span>
             </div>
             <button class="btn-change" type="button">Change</button>
         </section>
         
         <section id="payment">
-            <button class="pay">Proceed to Payment</button>
-            <a class="cancel" href="#">Cancel Order</a>
+            <ol class="payment-list">
+                <li id="pay">
+                    <a class="pay" href="#">Proceed to Payment</a>
+                </li>
+                <li id="cancel">
+                    <a class="cancel" href="#">Cancel Order</a>
+                </li>
+            </ol>
         </section>
-    </div>
+    </main>
     <footer class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/rleismann">rleismann</a>.

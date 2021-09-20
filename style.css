@@ -32,6 +32,10 @@ body {
     }
 }
 
+li {
+    list-style-type: none;
+}
+
 footer {
     position: absolute;
     width: 100%;
@@ -96,7 +100,7 @@ footer {
     padding-bottom: 5px;
 }
 
-#plan p {
+#plan span {
     color: var(--color4);
     font-size: .9em;
 }
@@ -105,6 +109,48 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
+}
+
+#pay {
+    background-color: var(--color2);
+    box-shadow: 0px 15px 25px -10px var(--color4);
+    font-weight: 700;
+    margin: 0 3.1em 1.5em 3.1em;
+    padding: 1em 0;
+    border-radius: 10px;
+    border: none;
+}
+
+#pay a {
+    text-decoration: none;
+    color: white;
+}
+
+#pay:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#cancel {
+    font-size: .9em;
+    padding-bottom: 2em;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#cancel a {
+    text-decoration: none;
+    color: var(--color4);
+}
+
+@media (max-width: 330px) {
+    #cancel {
+        padding-bottom: 15px;
+    }
+}
+
+#cancel a:hover {
+    color: var(--color5);
 }
 
 /* Classes */
@@ -140,40 +186,6 @@ footer {
     text-decoration: none;
     opacity: 50%;
     cursor: pointer;
-}
-
-.pay {
-    background-color: var(--color2);
-    box-shadow: 0px 15px 25px -10px var(--color4);
-    color: white;
-    font-weight: 700;
-    margin: 0 3.1em 1.7em 3.1em;
-    padding: 1em 0;
-    border-radius: 10px;
-    border: none;
-}
-
-.pay:hover {
-    opacity: 80%;
-    cursor: pointer;
-}
-
-.cancel {
-    color: var(--color4);
-    padding-bottom: 30px;
-    font-size: .9em;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-@media (max-width: 330px) {
-    .cancel {
-        padding-bottom: 15px;
-    }
-}
-
-.cancel:hover {
-    color: var(--color5);
 }
 
 .attribution {
